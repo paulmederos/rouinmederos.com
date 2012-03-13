@@ -33,8 +33,8 @@ $(document).ready(function() {
 	// Add the active class to new button
 	// Change URL hash to clicked on button
 	
-$('nav a').on('click', function(){
-	event.preventDefault();
+$('nav a').on('click', function(e){
+	e.preventDefault();
 	$('.content').hide();
     $('.active').removeClass('active');
     var newContentPiece = $(this).attr('href')
